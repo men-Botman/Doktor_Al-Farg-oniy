@@ -12,7 +12,9 @@ const categories: Array<Specialty | 'Barchasi'> = [
   'Kardiolog',
   'Nevropatolog',
   'Pediatr',
+  'Oftalmolog',
   'Dermatolog',
+  'Xirurg',
 ]
 
 export function CategoryFilter({ selected, onSelect }: CategoryFilterProps) {

@@ -14,6 +14,10 @@ type BookingModalProps = {
     slot: string
     patientName: string
     phone: string
+    notes?: string
+    telegramEnabled?: boolean
+    telegramHandle?: string
+    confirmationCode?: string
   }) => void
 }
 
@@ -83,7 +87,7 @@ export function BookingModal({ doctor, onClose, onSubmit }: BookingModalProps) {
                 </div>
                 <p className="mt-2 flex items-center gap-2 text-sm text-slate-600">
                   <MapPin className="h-4 w-4 text-blue-600" />
-                  {doctor.clinic}, {doctor.location}
+                  {doctor.clinic}, {doctor.location.address}
                 </p>
                 <p className="mt-1 text-sm text-slate-500">{doctor.experience} yil tajriba</p>
               </div>
